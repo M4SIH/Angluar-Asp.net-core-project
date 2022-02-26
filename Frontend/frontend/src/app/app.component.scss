@@ -1,0 +1,56 @@
+$hover-color:rgb(214, 97, 97);
+.example-spacer {
+  flex: 1 1 auto;
+}
+.Menu{
+  background: rgb(194,20,96);
+  background: linear-gradient(90deg, rgba(194,20,96,1) 28%, rgba(112,23,85,1) 100%);
+  height: 85px;
+}
+.Menu>button:hover{
+  background-color: rgb(37, 37, 39);
+  color: rgb(253, 255, 251);
+  transition: 0.6s;
+}
+.Menu>button{
+  margin-left: 14px;
+  font-size: large;
+}
+.logo-name{
+  width: 180px;
+  height: 160px;
+}
+// .search{
+//   min-width: 150px;
+//   max-width: 500px;
+//   width: 100%;
+//   background-color: rgb(49, 49, 49);
+//   color: rgb(253, 255, 251);
+//   border: none;
+// }
+.register{
+  width: 240px;
+}
+.register h2{
+  font-family: persian;
+  font-size: medium;
+  margin: 6px;
+  text-align: center;
+}
+.register a{
+  text-decoration: none;
+  justify-content: center;
+  color: black;
+}
+.register mat-list-item{
+  width: 100%;
+}
+.register-name{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(118,217,129,0.9920343137254902) 78%);
+}
+.register mat-icon{
+  color: grey;
+}
+
+

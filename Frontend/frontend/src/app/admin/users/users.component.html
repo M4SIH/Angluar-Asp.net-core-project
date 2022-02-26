@@ -1,0 +1,59 @@
+
+<!-- <div class="buttons">
+  <button mat-raised-button color="primary" (click)="createDialog()">افزودن</button>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>جستجو...</mat-label>
+    <input matInput [(ngModel)]="filter.fullname" (ngModelChange)="reloadData()" type="search">
+  </mat-form-field>
+  <mat-form-field  appearance="fill">
+    <mat-label>نوع جستجو</mat-label>
+    <mat-select >
+      <mat-option  [value]="filter.fullname">نام و نام خانوادگی</mat-option>
+      <mat-option  [value]="filter.accountUsername">نام کاربری</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field  appearance="fill">
+    <mat-label>تعداد</mat-label>
+    <mat-select [(ngModel)]="pageSize" (ngModelChange)="pageSizeChange()">
+      <mat-option  [value]="10">10</mat-option>
+      <mat-option  [value]="20">20</mat-option>
+      <mat-option  [value]="50">50</mat-option>
+      <mat-option  [value]="100">100</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div> -->
+<app-datagrid [needReload]="gridReload" (onAdd)="add()" (onEdit)="edit($event)" (onRemove)="remove($event)" [source]="'users/list'" [columns]="gridColumns"></app-datagrid>
+<!-- <table class="grid">
+  <thead>
+    <tr>
+      <td>نام و نام خانوادگی</td>
+      <td>نام کاربری</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody *ngIf="data">
+    <tr  *ngFor="let item of data">
+      <td>{{item.fullname}}</td>
+      <td>{{item.accountUsername}}</td>
+      <td><button (click)="editDialog(item.accountUsername)" mat-raised-button color="primary"><mat-icon>edit</mat-icon></button></td>
+      <td><button (click)="deleteDialog(item.accountUsername)" mat-raised-button color="warn"><mat-icon>delete</mat-icon></button></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="tableButtons">
+          <button [disabled]="(page+1)*pageSize>count" (click)="nextPage()" color="primary" mat-raised-button>Next</button>
+          <button [disabled]="page==0" (click)="prevPage()" color="primary" mat-raised-button>Prev</button>
+        </div>
+      </td>
+      <td colspan="3">
+        <div class="count">
+          <span class="material-icons-outlined">
+            person
+            </span>
+          <p>تعداد کاربران : {{count}}</p>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table> -->

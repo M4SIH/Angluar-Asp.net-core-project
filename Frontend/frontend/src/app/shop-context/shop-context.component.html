@@ -1,0 +1,30 @@
+<div class="breadcrumb" >
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" [routerLink]="['/main-pge']">خانه</li>
+      <li class="breadcrumb-item active" aria-current="page" [routerLink]="['/shop']">فروشگاه</li>
+      <li class="breadcrumb-item active" aria-current="page">{{product['title']}}</li>
+    </ol>
+  </nav>
+</div>
+<div id="page">
+  <div *ngIf="product">
+    <div class="product">
+      <div class="product-summary">
+        <img src="../../assets/img/CoursesImg/script-writting.jfif"  alt="course-title">
+        <p>{{product.title}}</p>
+      </div>
+      <div class="buy">
+        <p>هزینه دوره </p>
+        <button>ثبت نام دوره </button>
+        <p>مدت زمان دوره : </p>
+      </div>
+    </div>
+    <div class="product-description">
+      <p>توضیحات دوره</p>
+      <p>{{product['description']}}</p>
+    </div>
+  </div>
+</div>
+
+

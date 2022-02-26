@@ -1,0 +1,42 @@
+<mat-toolbar class="Menu">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon bookmark-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>bookmark</mat-icon>
+  </button>
+  <button [matMenuTriggerFor]="account_circle" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-menu  #account_circle="matMenu">
+      <div class="register">
+        <div class="register-name">
+          <h2 >نام کاربر</h2>
+        </div>
+        <!-- <mat-divider></mat-divider> -->
+        <mat-list role="list">
+          <a href=""><mat-list-item role="listitem"><mat-icon>account_circle</mat-icon><a href="" [routerLink]="'/register'">حساب کاربری</a></mat-list-item></a>
+          <a href=""><mat-list-item role="listitem"><mat-icon>bookmark</mat-icon><a href="">لیست من</a></mat-list-item></a>
+          <a href=""><mat-list-item role="listitem"><mat-icon>shopping_basket</mat-icon><a href="">سبد خرید</a></mat-list-item></a>
+          <a href=""><mat-list-item role="listitem"><mat-icon>power_settings_new</mat-icon><a href="">خروج از حساب کاربری</a></mat-list-item></a>
+        </mat-list>
+
+      </div>
+    </mat-menu>
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <button *ngIf="!auth.loggedIn()" (click)="openDialog()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>login</mat-icon>
+  </button>
+  <button *ngIf="auth.loggedIn()" (click)="signOut()" matTooltip="Log Out" [matTooltipShowDelay]="1000" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+  <!-- <button>{{display()}}</button> -->
+  <button mat-button>فیلم</button>
+  <button mat-button>سریال</button>
+  <button mat-button>رویداد ها</button>
+  <button [routerLink]="'/shop'" mat-button>فروشگاه</button>
+  <!-- <input class="search" matInput type="search" placeholder="جستجو..."> -->
+  <span class="example-spacer"></span>
+  <button *ngIf="currentUser && currentUser.manager" mat-raised-button color='primary' [routerLink]="['/admins']" routerLinkActive="router-link-active" >مدیریت</button>
+  <img class="logo-name" src="../assets/img/Logo.png" alt="CLN">
+</mat-toolbar>
+<router-outlet></router-outlet>

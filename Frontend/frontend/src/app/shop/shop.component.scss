@@ -1,0 +1,39 @@
+#cardtable{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.example-card {
+  max-width: 350px;
+  height: 450px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+mat-card-content h1 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(230, 227, 227);
+}
+mat-card-content p{
+  height: 80px;
+  font-family: persian;
+  text-overflow: ellipsis;
+  color: rgb(230, 227, 227);
+}
+
+mat-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+mat-card:hover{
+  box-shadow: 5px 5px 15px -2px #40C1FF;
+}
+mat-card{
+  margin: 15px;
+  background-color: rgba(110, 107, 107, 0.466);
+}
+mat-card img{
+  height: 220px;
+}

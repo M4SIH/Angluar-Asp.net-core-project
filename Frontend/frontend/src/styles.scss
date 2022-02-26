@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+  font-family:'persian';
+  src: url('./assets/fonts/Yekan.ttf');
+}
+@font-face{
+  font-family: 'yekan';
+  src: url(./assets/fonts/Yekan.ttf);
+}
+@font-face{
+  font-family: 'IranFont';
+  src: url('./assets/fonts/Shabnam.ttf');
+}
+@font-face{
+  font-family: 'IranSans';
+  src: url('./assets/fonts/IRANSansWeb_FaNum_Bold.woff2');
+}
+html, body { height: 100%; }
+body { margin: 0; background-color: rgb(26, 32, 32); }
+*{
+  font-family: persian;
+}

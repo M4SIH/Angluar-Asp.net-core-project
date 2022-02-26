@@ -1,0 +1,28 @@
+<div class="dialog row" mat-dialog-content>
+  <p *ngIf="data.action=='create'">اطلاعات کاربر</p>
+  <p *ngIf="data.action=='edit'">ویرایش اطلاعات</p>
+  <p *ngIf="data.action=='delete'">حذف کاربر</p>
+  <div *ngIf="data.action=='delete'">
+    <h2>آیا میخواهید این کاربر را حذف کنید ؟</h2>
+  </div>
+  <mat-form-field class="example-full-width">
+    <mat-label>نام و نام خانوادگی</mat-label>
+    <input matInput [disabled]="data.action=='delete'" [(ngModel)]="entity.fullname">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>نام کاربری</mat-label>
+    <input matInput [disabled]="data.action=='delete'" [(ngModel)]="entity.accountUsername">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" *ngIf="data.action=='create'">
+    <mat-label>رمز عبور</mat-label>
+    <input type="password" matInput [(ngModel)]="entity.account.password">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" *ngIf="data.action=='create'">
+    <mat-label>تکرار رمز عبور</mat-label>
+    <input type="password" matInput>
+  </mat-form-field>
+  <div class="buttons" mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="true">No Thanks</button>
+    <button (click)="ok()" mat-raised-button cdkFocusInitial>Ok</button>
+  </div>
+</div>

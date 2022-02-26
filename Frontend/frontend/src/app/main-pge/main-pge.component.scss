@@ -1,0 +1,114 @@
+$hover-color:rgb(214, 97, 97);
+
+#top_main_page{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+// .mySlides{
+//   display: none;
+// }
+.trailers_show{
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  background-color:rgb(0, 0, 0);
+}
+.trailers_show:hover img{
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+.trailers_show:hover #trailer_next{
+  visibility: unset;
+}
+.trailers_show:hover #trailer_prev{
+  visibility: unset;
+}
+.trailers_show:hover a{
+  color: $hover-color;
+  text-decoration: none;
+}
+.trailers_show img{
+  height:450px;
+  width:800px !important;
+  transition: transform .5s ease-out;
+}
+#trailer_next , #trailer_prev{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 55px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.575);
+  border-radius: 4px;
+  color: rgb(141, 133, 133);
+  transition: 0.5s;
+}
+#trailer_prev{
+  left: 0px;
+}
+#trailer_prev:hover , #trailer_next:hover{
+  color: rgb(180, 177, 177);
+
+}
+.trailer_show_title {
+
+  position: absolute;
+  display: flex;
+  align-self: flex-start;
+  height:50px;
+  // width: 100%;
+  padding: 5px;
+  text-decoration: none;
+  font-family: iranFont;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 58%, rgba(255,255,255,0) 100%);
+}
+.next-ts{
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 400px;
+  height: 450px;
+  position: relative;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 59%, rgb(58, 3, 3) 100%);
+}
+.next-ts a{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.next-ts a:hover{
+  color:$hover-color;
+}
+.next-ts a:hover svg{
+  visibility: visible;
+}
+.next-ts svg{
+  visibility: hidden;
+}
+.next-ts div{
+  width: 400px;
+}
+.next-ts h3{
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: IranFont;
+}
+.next-ts img{
+  margin-right: 5px;
+  height: 132px;
+  width: 88px;
+}

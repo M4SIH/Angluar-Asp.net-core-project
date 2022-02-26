@@ -1,0 +1,25 @@
+.row label , input{
+  padding: 5px;
+  margin-top: 5px;
+}
+.dialogImage img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: solid rgb(78, 76, 76) 5px;
+  border-radius: 5px;
+
+}
+.remind{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: 40px;
+  align-items:center;
+  color: black;
+}
+.bala{
+  margin-top: 0px;
+  margin-right: 5px;
+}

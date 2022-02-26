@@ -1,0 +1,70 @@
+.singIn{
+  position: absolute;
+  align-self:center;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  height:100%;
+  background-color: grey;
+  background-image: url('../../assets/img/SignIn_Background.jpg');
+  background-size: cover;
+}
+.form{
+  position: relative;
+  top: 15%;
+  background-color: rgb(54, 50, 50);
+  width: 290px;
+  height:580px;
+  z-index: 20;
+  border-radius: 5px;
+  align-self: baseline;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form form > input {
+  width:230px;
+  padding: 7px;
+  margin: 12px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(197, 193, 193);
+  outline: none;
+}
+.form form > input:first-child{
+  margin-top: 30px;
+}
+.form span {
+  margin: 10px;
+  align-self: center;
+}
+.remind{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: 40px;
+  align-items: center;
+  color: black;
+}
+.logos{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 290px;
+  height: 50px;
+}
+.logos img{
+  width: 40px;
+  height: 40px;
+}
+.buttons{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.gender{
+  margin-top: 30px;
+  margin-right: 10px;
+}

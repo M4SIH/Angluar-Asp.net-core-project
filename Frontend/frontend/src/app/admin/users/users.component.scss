@@ -1,0 +1,85 @@
+@font-face {
+  font-family: helvetica;
+  src: url(../../../assets/fonts/Helvetica.otf);
+}
+.grid{
+  color: black;
+  background-color: rgb(231, 231, 231);
+}
+table{
+  width: 70%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 9px 10px 11px 5px rgba(140,164,211,0.62);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+thead td{
+  width: 45%;
+  text-align: center;
+  font-family: persian;
+}
+thead{
+  background: rgb(194,20,96);
+  background: linear-gradient(90deg, rgba(194,20,96,1) 28%, rgba(112,23,85,1) 100%);
+}
+td{
+  padding: 10px;
+}
+tbody td{
+  font-family:helvetica;
+}
+tr:nth-child(even) {
+  background-color: #a4a0c9;
+}
+thead tr td{
+  text-align: right;
+  padding: 15px;
+}
+.buttons{
+  background-color: grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  margin-right:15%;
+  width:70%;
+  height: 5%;
+  justify-content:space-between;
+
+
+}
+mat-dialog{
+  color: black;
+}
+.tableButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+tr:last-child{
+  background-color: grey;
+}
+.count p{
+  text-align: left;
+  font-size: medium ;
+  // background-color: rgb(107, 40, 40);
+}
+.mat-form-field{
+  background-color: rgb(228, 222, 222);
+  border-radius: 5px;
+  // margin-right: 35px;
+  // color: black;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 50%;
+}

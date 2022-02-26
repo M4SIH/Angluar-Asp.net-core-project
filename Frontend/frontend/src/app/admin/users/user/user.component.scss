@@ -1,0 +1,31 @@
+@font-face {
+  font-family: helvetica;
+  src: url(../../../../assets/fonts/Helvetica.otf);
+}
+h2{
+  font-family: persian;
+}
+.dialog{
+  height: 400px;
+  width: 300px;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+button{
+  background-color: rgb(62, 167, 62);
+  border-radius: 3px;
+  border:none;
+  // box-shadow: 2px 2px 2px gray;
+  // padding:5px;
+  // margin-right: 5px;
+}
+button:first-child{
+  background-color: rgb(194, 72, 72);
+}
+p{
+  text-align: center;
+  font-size: large;
+}

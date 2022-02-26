@@ -1,0 +1,22 @@
+<div class="dialog">
+  <div class="dialogImage">
+    <img src="../../assets/img/Logo.png" alt="logo">
+  </div>
+  <!-- <h1 mat-dialog-title>ورود کاربر</h1> -->
+  <div mat-dialog-content color="primary">
+    <div class="row">
+      <label for="Username">نام کاربری</label>
+        <input [(ngModel)]="username" type="text" name="Username" id="Username" placeholder="نام کاربری">
+        <label for="password">پسورد</label>
+        <input [(ngModel)]="password" type="password" name="Username" id="Username" placeholder="پسورد">
+        <div class="remind">
+          <span>مرا به خاطر داشته باش</span>
+          <input [(ngModel)]="keepMe" class="bala" type="checkbox" name="remind-me" id="remind-me">
+        </div>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="true">انصراف</button>
+    <button (click)="check()" mat-button cdkFocusInitial>تایید</button>
+  </div>
+</div>

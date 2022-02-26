@@ -1,0 +1,55 @@
+#page{
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  background: white;
+  // background: #D3CCE3;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to top, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to top, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 1% ;
+}
+#page p{
+  font-family:IranSans;
+}
+.breadcrumb nav{
+  margin: 2%;
+}
+.breadcrumb nav li{
+  font-size: medium;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+}
+.breadcrumb nav li:not(:last-child):hover{
+
+  cursor: pointer;
+}
+.product{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding:4%;
+  margin-bottom: 4%;
+}
+.product-summary{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 50%;
+
+}
+.product-summary p{
+  margin-right: 2%;
+  height: 100%;
+  color: black;
+  font-size: large;
+  font-family:IranSans;
+}
+// .summary-product img{
+
+// }
+
+.product-description{
+  margin-right: 2%;
+  width: 50%;
+}
+
